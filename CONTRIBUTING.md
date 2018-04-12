@@ -27,3 +27,10 @@ Le sujet correspond à une définition succinte du développement.
 
 - le message doit être en minuscule
 - pas de "point" à la fin du message
+
+## Workflow
+
+- Choisir une issue
+- Créér une branche du type 1-model-utilisateur
+- Faire les modifications
+- Faire une pull request vers develop/master 
