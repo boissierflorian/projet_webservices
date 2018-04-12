@@ -31,6 +31,6 @@ Le sujet correspond à une définition succinte du développement.
 ## Workflow
 
 - Choisir une issue
-- Créér une branche du type 1-model-utilisateur
+- Créér une branche du type *'1-model-utilisateur'*
 - Faire les modifications
 - Faire une pull request vers develop/master 
