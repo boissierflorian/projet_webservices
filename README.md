@@ -12,6 +12,21 @@ Ce projet fournira une couche API, qui permettra de récupérer des informations
 
 
 ## Procédure d'installation
+```
+#1 git clone https://github.com/boissierflorian/projet_webservices.git
+#2 cd projet_webservices
+#3 npm i
+#4 nano config.json
+#5 npm start
+```
+
+#1 Téléchargement du projet.
+#2 On se place à la racine du projet.
+#3 Installation des dépendances.
+#4 Ajout des identifiants de connexion à la base de données.
+#5 Lancement du serveur.
+
+À partir de là tester les requêtes avec Postman.
 
 ## Structure du projet
 ```
@@ -39,5 +54,3 @@ package.json
 ## Liens utiles
 - [Kanban](https://github.com/boissierflorian/projet_webservices/projects/1)
 - [Guide de contribution](https://github.com/boissierflorian/projet_webservices/blob/master/CONTRIBUTING.md)
-
-## Exemples
