@@ -8,7 +8,7 @@ Ce projet fournira une couche API, qui permettra de récupérer des informations
 ## Procédure d'installation
 
 ## Liens utiles
-- Le kanban
-
+- [Le kanban](https://github.com/boissierflorian/projet_webservices/projects/1)
+- [guide de contribution](https://github.com/boissierflorian/projet_webservices/blob/master/CONTRIBUTING.md)
 
 ## Exemples
