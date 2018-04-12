@@ -20,11 +20,11 @@ Ce projet fournira une couche API, qui permettra de récupérer des informations
 #5 npm start
 ```
 
-#1 Téléchargement du projet.
-#2 On se place à la racine du projet.
-#3 Installation des dépendances.
-#4 Ajout des identifiants de connexion à la base de données.
-#5 Lancement du serveur.
+- #1 Téléchargement du projet.
+- #2 On se place à la racine du projet.
+- #3 Installation des dépendances.
+- #4 Ajout des identifiants de connexion à la base de données.
+- #5 Lancement du serveur.
 
 À partir de là tester les requêtes avec Postman.
 
