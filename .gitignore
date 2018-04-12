@@ -1,0 +1,9 @@
+# node packages
+node_modules/
+
+# package
+package-lock.json
+
+# intellij
+.idea/
+
