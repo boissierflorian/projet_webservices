@@ -7,10 +7,6 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
-// configuration 
-var fs = require('fs');
-var configData = fs.readFileSync('config.json', 'utf8');
-databaseConfig = JSON.parse(configData);
 
 var app = express();
 
