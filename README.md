@@ -5,6 +5,12 @@ Projet de Master 1 Ingénieurie du Logiciel Libre - Module Web Services.
 L'objectif du projet est de réaliser un web service à l'aide d'une technologie choisie arbitrairement.
 Ce projet fournira une couche API, qui permettra de récupérer des informations sur le réseau social.
 
+## Technologies
+
+<img src="https://nodejs.org/static/images/logo-light.svg" width="400" />
+<img src="https://cdn-images-1.medium.com/max/661/1*XcE0wR1ZmWLFbdF2dE5WuA.png" width="400" />
+
+
 ## Procédure d'installation
 
 ## Structure du projet
