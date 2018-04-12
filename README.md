@@ -7,8 +7,31 @@ Ce projet fournira une couche API, qui permettra de récupérer des informations
 
 ## Procédure d'installation
 
+## Structure du projet
+```
+bin/
+models/
+node_modules/
+public/
+  images/
+  javascripts/
+  stylesheets/
+routes/
+views/
+app.js
+package.json
+```
+- **bin/** : wrapper d'express
+- **models/** : définition des modèles
+- **node_modules/** : les packages de node.js
+- **public/** : les fichiers (images, css, scripts) accessibles par le client.
+- **routes/** : définition des routes
+- **views/** : définition des templates
+- **app.js** : le point d'entrée de l'application
+- **package.json** : propriétés du projet et ses dépendances
+
 ## Liens utiles
-- [Le kanban](https://github.com/boissierflorian/projet_webservices/projects/1)
-- [guide de contribution](https://github.com/boissierflorian/projet_webservices/blob/master/CONTRIBUTING.md)
+- [Kanban](https://github.com/boissierflorian/projet_webservices/projects/1)
+- [Guide de contribution](https://github.com/boissierflorian/projet_webservices/blob/master/CONTRIBUTING.md)
 
 ## Exemples
