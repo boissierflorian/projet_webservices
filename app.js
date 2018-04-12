@@ -12,8 +12,6 @@ var fs = require('fs');
 var configData = fs.readFileSync('config.json', 'utf8');
 databaseConfig = JSON.parse(configData);
 
-require('./modules/modules');
-
 var app = express();
 
 // view engine setup
