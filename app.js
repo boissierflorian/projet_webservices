@@ -10,10 +10,6 @@ var logoutRouter = require('./routes/logout');
 var usersRouter = require('./routes/users');
 var groupsRouter = require('./routes/groups');
 
-// configuration 
-var fs = require('fs');
-var configData = fs.readFileSync('config.json', 'utf8');
-databaseConfig = JSON.parse(configData);
 
 var app = express();
 
