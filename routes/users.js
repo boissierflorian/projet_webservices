@@ -1,26 +1,36 @@
 var express = require('express');
 var router = express.Router();
+var userService = require('../services/user');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('Afficher tous les utilisateurs');
+  userService.getUsers().then(function(datas){
+    res.json(datas);
+  })
 });
 
 router.get('/:id([0-9]+)', function(req, res, next) {
-  var userID = req.params.id;
-  res.send(userID);
+    userService.getUser(req.params.id).then(function(datas){
+        res.json(datas);
+    })
 });
 
 router.post('/', function(req, res, next) {
-  res.send('Création d\'un utilisateur');
+    userService.createUser(req.body).then(function(datas){
+        res.json(datas);
+    });
 });
 
 router.put('/:id([0-9]+)', function(req, res, next) {
-  res.send('Mettre à jour l\'utilisateur');
+    userService.updateUser(req.params.id, req.body).then(function(datas){
+        res.json(datas);
+    });
 });
 
 router.delete('/:id([0-9]+)', function(req, res, next) {
-  res.send('Supprimer un utilisateur');
+  userService.deleteUser(req.params.id).then(function(datas){
+      res.json(datas);
+  })
 });
 
 router.post('/:id([0-9]+)/publications', function(req, res, next) {

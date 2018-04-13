@@ -19,7 +19,7 @@ module.exports = (sequelize, DataTypes) => {
             return (users === null) ? [] : datas;
         }).catch(function (e) {
             console.log(e);
-            return [];
+            return {error : e};
         });
     };
 
@@ -32,7 +32,7 @@ module.exports = (sequelize, DataTypes) => {
             return (user === null) ? [] : user.dataValues;
         }).catch(function (e) {
             console.log(e);
-            return [];
+            return {error : e};
         })
     };
     return User;
