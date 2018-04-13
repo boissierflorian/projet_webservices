@@ -16,6 +16,9 @@ exports.createUser = function(params){
         }else{
             return {created: false}
         }
+    }).catch(function (e) {
+        console.log(e);
+        return {error: e};
     });
 };
 
@@ -45,6 +48,9 @@ exports.updateUser = function(idUser, params){
             where: {
                 id: idUser
             }
+        }).catch(function (e) {
+            console.log(e);
+            return {error: e};
         });
 };
 
@@ -53,5 +59,8 @@ exports.deleteUser = function(idUser){
         where:{
             id: idUser
         }
+    }).catch(function (e) {
+        console.log(e);
+        return {error: e};
     });
 };
