@@ -21,7 +21,7 @@ exports.createUser = function(params){
 
 exports.getUsers = function(){
     return models.User.findUsers().then(function(users){
-        if(users !== undefined){
+        if(users !== null){
             return users;
         }else{
             return {};
@@ -31,7 +31,7 @@ exports.getUsers = function(){
 
 exports.getUser = function(idUser){
     return models.User.findUser(idUser).then(function(user){
-        if(user !== undefined){
+        if(user !== null){
             return user;
         }else{
             return {};
