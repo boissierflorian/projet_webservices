@@ -1,21 +1,31 @@
 var express = require('express');
 var router = express.Router();
+var GroupService = require('../services/groups');
 
-/* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('Display Groups');
+  GroupService.getGroups().then(result => {
+    res.json(result);
+  });
 });
 
 router.post('/', function(req, res, next) {
-  res.send('Ajouter un groupe');
+    GroupService.createGroup(req.body).then(result => {
+        res.json(result);
+    });
 });
 
 router.put('/:id([0-9]+)', function(req, res, next) {
-  res.send('Mettre à jour un groupe');
+  req.body.id = req.params.id;
+
+  GroupService.updateGroup(req.body).then(result => {
+    res.json(result);
+  });
 });
 
 router.delete('/:id([0-9]+)', function(req, res, next) {
-  res.send('Supprimer un groupe');
+  GroupService.deleteGroup(req.params).then(result => {
+    res.json(result);
+  });
 });
 
 module.exports = router;
