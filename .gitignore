@@ -8,4 +8,4 @@ package-lock.json
 .idea/
 
 # config database
-git rm --cached config.json
+config.json
