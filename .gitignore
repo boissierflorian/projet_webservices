@@ -7,6 +7,5 @@ package-lock.json
 # intellij
 .idea/
 
-#config database
-config.json
-
+# config database
+git rm --cached config.json
