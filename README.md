@@ -38,6 +38,7 @@ public/
   javascripts/
   stylesheets/
 routes/
+services/
 views/
 app.js
 package.json
@@ -47,6 +48,7 @@ package.json
 - **node_modules/** : les packages de node.js
 - **public/** : les fichiers (images, css, scripts) accessibles par le client.
 - **routes/** : définition des routes
+- **services/** : définition des services
 - **views/** : définition des templates
 - **app.js** : le point d'entrée de l'application
 - **package.json** : propriétés du projet et ses dépendances
