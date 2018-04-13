@@ -17,5 +17,21 @@ module.exports = (sequelize, DataTypes) => {
         },
     });
 
+    UserGroup.getUsers = function(groupId) {
+        return UserGroup.findAll({where: { id_group : groupId }, attributes: ['id_user']}).then(users => {
+            var usersIDs = [];
+            
+            users.forEach(user => {
+                usersIDs.push(user.id_user);
+            });
+
+            return usersIDs;
+        })
+        .catch(function(e) {
+            console.log(e);
+            return [];
+        });
+    }
+
     return UserGroup;
 };
