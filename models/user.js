@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
             users.forEach(user => {
                 datas.push(user.dataValues)
             });
-            return (users === null) ? [] : users;
+            return (users === null) ? [] : datas;
         }).catch(function (e) {
             console.log(e);
             return [];
