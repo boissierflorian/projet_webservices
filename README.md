@@ -7,9 +7,11 @@ Ce projet fournira une couche API, qui permettra de récupérer des informations
 
 ## Technologies
 
-<img src="https://nodejs.org/static/images/logo-light.svg" width="400" />
-<img src="https://cdn-images-1.medium.com/max/661/1*XcE0wR1ZmWLFbdF2dE5WuA.png" width="400" />
-
+<p align="center">
+<img src="https://nodejs.org/static/images/logo-light.svg" width="200" />
+<img src="https://cdn-images-1.medium.com/max/661/1*XcE0wR1ZmWLFbdF2dE5WuA.png" width="200" />
+<img src="https://i.cloudup.com/zfY6lL7eFa-3000x3000.png" width="200" />
+</p>
 
 ## Procédure d'installation
 ```
