@@ -28,7 +28,29 @@ Ce projet fournira une couche API, qui permettra de récupérer des informations
 - #4 Ajout des identifiants de connexion à la base de données.
 - #5 Lancement du serveur.
 
-À partir de là tester les requêtes avec Postman.
+À partir d'ici tester les requêtes avec Postman.
+
+## Configuration du projet
+Le fichier de configuration (config.json) se présente comme ceci :
+```
+{
+    "username": "",
+    "password": "",
+    "database_name": "",
+    "host": "localhost",
+    "dialect": "mysql",
+    "pool": {
+        "max": 5,
+        "min": 0,
+        "acquire": 30000,
+        "idle": 10000
+    }
+}
+```
+Ce JSON correspond exactement aux options attendues par le [constructeur](http://docs.sequelizejs.com/class/lib/sequelize.js~Sequelize.html#instance-constructor-constructor) de sequelize.
+
+Le dialect doit correspondre à votre type de base données, par exemple:
+- *mysql, sqlite ,postgres ou encore mssql.*
 
 ## Structure du projet
 ```
@@ -58,3 +80,7 @@ package.json
 ## Liens utiles
 - [Kanban](https://github.com/boissierflorian/projet_webservices/projects/1)
 - [Guide de contribution](https://github.com/boissierflorian/projet_webservices/blob/master/CONTRIBUTING.md)
+- [Issues](https://github.com/boissierflorian/projet_webservices/issues)
+- [Sequelize](http://docs.sequelizejs.com/)
+- [Node.js](https://nodejs.org/en/)
+- [Express](https://expressjs.com/fr/)
