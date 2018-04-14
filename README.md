@@ -65,6 +65,7 @@ routes/
 services/
 views/
 app.js
+config.json
 package.json
 ```
 - **bin/** : wrapper d'express
@@ -75,6 +76,7 @@ package.json
 - **services/** : définition des services
 - **views/** : définition des templates
 - **app.js** : le point d'entrée de l'application
+- **config.json** : le fichier de configuration de la base de données
 - **package.json** : propriétés du projet et ses dépendances
 
 ## Liens utiles
