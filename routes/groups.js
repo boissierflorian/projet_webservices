@@ -10,7 +10,12 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/:id([0-9]+)', function(req, res, next) {
-  res.send('Afficher un seul groupe');
+  GroupService.getGroup(req.params).then(result => {
+    UserGroupService.getUsers(req.params).then(users => {
+      result.dataValues.users = users;
+      res.json(result);
+    });
+  });
 });
 
 router.post('/', function(req, res, next) {
