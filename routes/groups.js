@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var GroupService = require('../services/groups');
+var UserGroupService = require('../services/usergroup');
 
 router.get('/', function(req, res, next) {
   GroupService.getGroups().then(result => {
@@ -33,7 +34,9 @@ router.delete('/:id([0-9]+)', function(req, res, next) {
 });
 
 router.delete('/:groupId([0-9]+)/user/:userId([0-9]+)', function(req, res, next) {
-  res.send('Supprimer un utilisateur d\'un groupe spécifié');
+  UserGroupService.deleteUserFromGroup(req.params).then(result => {
+    res.json(result);
+  });
 });
 
 module.exports = router;
