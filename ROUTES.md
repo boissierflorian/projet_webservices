@@ -24,6 +24,9 @@ Ce document recense l'api proposée par le projet.
 # User
 
 ## 1.1 Récupérer tous les utilisateurs
+<div align="right">
+    <b><a href="#routes">↥ back to top</a></b>
+</div>
 
 ![GET](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111698754.png) **/api/users/**
 
