@@ -82,6 +82,7 @@ package.json
 ## Liens utiles
 - [Kanban](https://github.com/boissierflorian/projet_webservices/projects/1)
 - [Guide de contribution](https://github.com/boissierflorian/projet_webservices/blob/master/CONTRIBUTING.md)
+- [API](https://github.com/boissierflorian/projet_webservices/blob/master/ROUTES.md)
 - [Issues](https://github.com/boissierflorian/projet_webservices/issues)
 - [Sequelize](http://docs.sequelizejs.com/)
 - [Node.js](https://nodejs.org/en/)
