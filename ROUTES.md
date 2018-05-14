@@ -18,7 +18,7 @@ Ce document recense l'api proposée par le projet.
     3. Créer un groupe
     4. Mettre à jour un groupe
     5. Supprimer un groupe
-    6. Ajoute un utilisateur à un groupe
+    6. Ajouter un utilisateur à un groupe
     7. Supprimer un utilisateur d'un groupe
 
 # User
@@ -352,6 +352,8 @@ http://localhost:3000/api/users/1/publications/2
 
 ![DELETE](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111942008.png) **/api/users/{userId}/publications/{publicationId}**
 
+Supprime une publication d'un utilisateur donné
+
 ## Paramètres d'url
 
 * userId (integer) - l'identifiant de l'utilisateur
@@ -366,3 +368,200 @@ http://localhost:3000/api/users/1/publications/7
 ```
 
 # Groups
+
+## 2.1 Récupérer tous les groupes
+
+![GET](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111698754.png) **/api/groups**
+
+Retourne la liste de tous les groupes
+
+## Exemple
+
+http://localhost:3000/api/groups/
+
+```
+[
+    {
+        "id": 1,
+        "name": "Sports"
+    },
+    {
+        "id": 2,
+        "name": "Gastronomie"
+    },
+    {
+        "id": 3,
+        "name": "Littérature"
+    }
+]
+```
+
+Structure (collection)
+
+* id (integer) - l'identifiant du groupe
+* name (string) - le nom du groupe
+
+## 2.2 Récupérer un groupe
+
+![GET](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111698754.png) **/api/groups/{groupId}**
+
+Retourne un groupe donné
+
+## Paramètres d'url
+
+* groupId (integer) - l'identifiant du groupe
+
+## Exemple
+
+http://localhost:3000/api/groups/1
+
+```
+{
+    "id": 1,
+    "name": "Sports",
+    "createdAt": "2018-04-13T15:10:52.000Z",
+    "updatedAt": "2018-05-14T12:25:20.000Z",
+    "users": [
+        2,
+        1
+    ]
+}
+```
+
+Structure (objet)
+
+* id (integer) - l'identifiant du groupe
+* name (string) - le nom du groupe
+* users (collection) - les id des utilisateurs appartenant au groupe.
+
+## 2.3 Créer un groupe
+
+![POST](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111384120.png) **/api/groups**
+
+Crée un nouveau groupe
+
+## Request body
+
+```
+{
+    "name": "Astronomie"
+}
+```
+
+Structure (objet)
+
+* name (string) - le nom du groupe
+
+## Exemple
+
+http://localhost:3000/api/groups/
+
+```
+{
+    "id": 4,
+    "name": "Astronomie",
+    "updatedAt": "2018-05-14T12:57:19.574Z",
+    "createdAt": "2018-05-14T12:57:19.574Z"
+}
+```
+
+Structure (objet)
+
+* id (integer) - l'identifiant du groupe
+* name (string) - le nom du groupe
+
+## 2.4 Mettre à jour un groupe
+
+![PUT](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111440019.png) **/api/groups/{groupId}**
+
+Met à jour le groupe donné
+
+## Paramètres d'url
+
+* groupId (integer) - l'identifiant du groupe à modifier
+
+## Request body
+
+```
+{
+    "name": "Langues"
+}
+```
+
+Structure (objet)
+
+* name (string) - le nouveau nom du groupe
+* etc.
+
+## Exemple
+
+http://localhost:3000/api/groups/4
+
+```
+[
+    1
+]
+```
+
+## 2.5 Supprimer un groupe
+![DELETE](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111942008.png) **/api/groups/{groupId}**
+
+Supprime le groupe donné
+
+## Paramètres d'url
+
+* groupId (integer) - l'identifiant du groupe à supprimer
+
+## Exemple
+
+http://localhost:3000/api/groups/4
+
+```
+1
+```
+
+## 2.6 Ajouter un utilisateur à un groupe
+
+![POST](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111384120.png) **/api/groups/{groupId}/user/{userId}**
+
+## Paramètres d'url
+
+* groupId (integer) - l'identifiant du groupe à supprimer
+* userId (integer) - l'identifiant de l'utilisateur à ajouter
+
+## Exemple
+
+http://localhost:3000/api/groups/2/user/1
+
+```
+{
+    "id": 4,
+    "id_user": "1",
+    "id_group": "2",
+    "updatedAt": "2018-05-14T13:07:03.095Z",
+    "createdAt": "2018-05-14T13:07:03.095Z",
+    "created": true
+}
+```
+
+Structure (objet)
+
+* id_user (integer) - l'identifiant de l'utilisateur ajouté au groupe
+* id_group (integer) - l'identifiant du groupe
+
+## 2.7 Supprimer un utilisateur d'un groupe
+
+![DELETE](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111942008.png) **/api/groups/{groupId}/user/{userId}**
+
+## Paramètres d'url
+
+* groupId (integer) - l'identifiant du groupe à modifier
+* userId (integer) - l'identifiant de l'utilisateur à supprimer du groupe
+
+## Exemple
+
+http://localhost:3000/api/groups/1/user/1
+
+```
+1
+```
