@@ -25,7 +25,7 @@ Ce document recense l'api proposée par le projet.
 
 ## 1.1 Récupérer tous les utilisateurs
 <div align="right">
-    <b><a href="#routes">↥ back to top</a></b>
+    <b><a href="#routes">↥ revenir en haut</a></b>
 </div>
 
 ![GET](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111698754.png) **/api/users/**
@@ -77,6 +77,9 @@ Structure (collection)
 * address (string) - l'adresse de l'utilisateur
 
 ## 1.2 Récupérer un utilisateur
+<div align="right">
+    <b><a href="#routes">↥ revenir en haut</a></b>
+</div>
 
 ![GET](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111698754.png) **/api/users/{userId}**
 
@@ -117,6 +120,9 @@ Structure (objet)
 * address (string) - l'adresse de l'utilisateur
 
 ## 1.3 Création d'un utilisateur
+<div align="right">
+    <b><a href="#routes">↥ revenir en haut</a></b>
+</div>
 
 ![POST](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111384120.png) **/api/users/**
 
@@ -178,6 +184,9 @@ Structure (objet)
 * address (string) - l'adresse de l'utilisateur
 
 ## 1.4 Mettre à jour un utilisateur
+<div align="right">
+    <b><a href="#routes">↥ revenir en haut</a></b>
+</div>
 
 ![PUT](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111440019.png) **/api/users/{userId}**
 
@@ -212,6 +221,9 @@ Structure (array)
 * Le résultat de l'opération.
 
 ## 1.5 Suppression d'un utilisateur
+<div align="right">
+    <b><a href="#routes">↥ revenir en haut</a></b>
+</div>
 
 ![DELETE](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111942008.png) **/api/users/{userId}**
 
@@ -230,6 +242,9 @@ http://localhost:3000/api/users/5
 ```
 
 ## 1.6 Récupérer les publications d'un utilisateur
+<div align="right">
+    <b><a href="#routes">↥ revenir en haut</a></b>
+</div>
 
 ![GET](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111698754.png) **/api/users/{userId}/publications**
 
@@ -257,6 +272,9 @@ http://localhost:3000/api/users/1/publications
 
 
 ## 1.7 Récupérer une publication d'un utilisateur
+<div align="right">
+    <b><a href="#routes">↥ revenir en haut</a></b>
+</div>
 
 ![GET](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111698754.png) **/api/users/{userId}/publications/{publicationId}**
 
@@ -282,6 +300,9 @@ http://localhost:3000/api/users/1/publications/1
 ```
 
 ## 1.8 Création d'une publication pour un utilisateur
+<div align="right">
+    <b><a href="#routes">↥ revenir en haut</a></b>
+</div>
 
 ![POST](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111384120.png) **/api/users/{userId}/publications**
 
@@ -319,6 +340,9 @@ http://localhost:3000/api/users/1/publications/
 ```
 
 ## 1.9 Mettre à jour une publication d'un utilisateur
+<div align="right">
+    <b><a href="#routes">↥ revenir en haut</a></b>
+</div>
 
 ![PUT](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111440019.png) **/api/users/{userId}/publications/{publicationId}**
 
@@ -352,6 +376,9 @@ http://localhost:3000/api/users/1/publications/2
 ```
 
 ## 1.10 Supprimer une publication d'un utilisateur
+<div align="right">
+    <b><a href="#routes">↥ revenir en haut</a></b>
+</div>
 
 ![DELETE](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111942008.png) **/api/users/{userId}/publications/{publicationId}**
 
@@ -373,6 +400,9 @@ http://localhost:3000/api/users/1/publications/7
 # Groups
 
 ## 2.1 Récupérer tous les groupes
+<div align="right">
+    <b><a href="#routes">↥ revenir en haut</a></b>
+</div>
 
 ![GET](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111698754.png) **/api/groups**
 
@@ -405,6 +435,9 @@ Structure (collection)
 * name (string) - le nom du groupe
 
 ## 2.2 Récupérer un groupe
+<div align="right">
+    <b><a href="#routes">↥ revenir en haut</a></b>
+</div>
 
 ![GET](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111698754.png) **/api/groups/{groupId}**
 
@@ -438,6 +471,9 @@ Structure (objet)
 * users (collection) - les id des utilisateurs appartenant au groupe.
 
 ## 2.3 Créer un groupe
+<div align="right">
+    <b><a href="#routes">↥ revenir en haut</a></b>
+</div>
 
 ![POST](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111384120.png) **/api/groups**
 
@@ -474,6 +510,9 @@ Structure (objet)
 * name (string) - le nom du groupe
 
 ## 2.4 Mettre à jour un groupe
+<div align="right">
+    <b><a href="#routes">↥ revenir en haut</a></b>
+</div>
 
 ![PUT](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111440019.png) **/api/groups/{groupId}**
 
@@ -507,6 +546,10 @@ http://localhost:3000/api/groups/4
 ```
 
 ## 2.5 Supprimer un groupe
+<div align="right">
+    <b><a href="#routes">↥ revenir en haut</a></b>
+</div>
+
 ![DELETE](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111942008.png) **/api/groups/{groupId}**
 
 Supprime le groupe donné
@@ -524,6 +567,9 @@ http://localhost:3000/api/groups/4
 ```
 
 ## 2.6 Ajouter un utilisateur à un groupe
+<div align="right">
+    <b><a href="#routes">↥ revenir en haut</a></b>
+</div>
 
 ![POST](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111384120.png) **/api/groups/{groupId}/user/{userId}**
 
@@ -553,6 +599,9 @@ Structure (objet)
 * id_group (integer) - l'identifiant du groupe
 
 ## 2.7 Supprimer un utilisateur d'un groupe
+<div align="right">
+    <b><a href="#routes">↥ revenir en haut</a></b>
+</div>
 
 ![DELETE](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111942008.png) **/api/groups/{groupId}/user/{userId}**
 
