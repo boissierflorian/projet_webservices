@@ -56,7 +56,7 @@ router.delete('/:id([0-9]+)', function(req, res, next) {
 /**
  * Add User to a specific group
  */
-router.post('/:groupId([0-9]+)/user/:id([0-9]+)', function(req, res, next) {
+router.post('/:groupId([0-9]+)/user/:userId([0-9]+)', function(req, res, next) {
    UserGroupService.addUserToGroup(req.params).then(result => {
        res.json(result);
    })
