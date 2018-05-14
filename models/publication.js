@@ -28,5 +28,21 @@ module.exports = (sequelize, DataTypes) => {
         });
     };
 
+    Publication.getOneUserPublication = function(userId, publicationId) {
+        return Publication.findOne({where : {id_user : userId, id : publicationId}}).then(publication => {
+            return publication ? publication : [];
+        }).catch(function(e) {
+            return {error : e};
+        });
+    }
+
+    Publication.getAllUserPublications = function(userId) {
+        return Publication.findAll({where : {id_user : userId}}).then(publications => {
+            return publications ? publications : [];
+        }).catch(function(e) {
+            return {error : e};
+        });
+    }
+
     return Publication;
 };
