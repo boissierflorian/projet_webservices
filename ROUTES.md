@@ -23,5 +23,55 @@ Ce document recense l'api proposée par le projet.
 
 # User
 
+## 1.1 Récupérer tous les utilisateurs
+
+```
+GET /api/users/
+```
+
+Retourne la liste des utilisateurs.
+
+### Request parameters
+Aucun.
+
+### Request body
+Aucune.
+
+### Exemple
+
+http://localhost:3000/api/users/
+
+```
+[
+    {
+        "id": 1,
+        "firstName": "John",
+        "lastName": "Wayne",
+        "mail": "abc@sfr.fr",
+        "password": "abcdef",
+        "age": 15,
+        "city": "Gotham",
+        "address": "15 rue gotham",
+        "createdAt": "2018-04-13T00:00:00.000Z",
+        "updatedAt": "2018-04-19T00:00:00.000Z"
+    },
+    {
+        "id": 2,
+        "firstName": "Henri",
+        "lastName": "Masson",
+        "mail": "mass@sfr.fr",
+        "password": "aa",
+        "age": 15,
+        "city": "cc",
+        "address": "ca",
+        "createdAt": "2018-04-14T00:00:00.000Z",
+        "updatedAt": "2018-04-14T00:00:00.000Z"
+    }
+]
+```
+
+
+
+
 # Groups
 
