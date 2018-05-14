@@ -1,29 +1,29 @@
 # Routes
 Ce document recense l'api proposée par le projet.
 
-1. User
-    1. Récupérer tous les utilisateurs
-    2. Récupérer un utilisateur
-    3. Création d'un utilisateur
-    4. Mettre à jour un utilisateur
-    5. Suppression d'un utilisateur
-    6. Récupérer les publications d'un utilisateur
-    7. Récupérer une publication d'un utilisateur
-    8. Création d'une publication pour un utilisateur
-    9. Mettre à jour une publication d'un utilisateur
-    10. Supprimer une publication d'un utilisateur
-2. Groups
-    1. Récupérer tous les groupes
-    2. Récupérer un groupe
-    3. Créer un groupe
-    4. Mettre à jour un groupe
-    5. Supprimer un groupe
-    6. Ajouter un utilisateur à un groupe
+* [**1 - User**](#user)
+    * [**1.1 - Récupérer tous les utilisateurs**](#récupérer-tous-les-utilisateurs) 
+    * [**1.2 - Récupérer un utilisateur**](#récupérer-un-utilisateur)
+    * [**1.3 - Créer un utilisateur**](#créer-un-utilisateur)
+    * [**1.4 - Mettre à jour un utilisateur**](#mettre-à-jour-un-utilisateur)
+    * [**1.5 - Supprimer un utilisateur**](#supprimer-un-utilisateur)
+    * [**1.6 - Récupérer les publications d'un utilisateur**](#récupérer-les-publications-d'un-utilisateur)
+    * [**1.7 - Récupérer une publication d'un utilisateur**]
+    * [**1.8 - Création d'une publication pour un utilisateur**]
+    * [**1.9 - Mettre à jour une publication d'un utilisateur**]
+    * [**1.10 - Supprimer une publication d'un utilisateur**]
+* [**2 - Groups**]
+    * [**2.1 - Récupérer tous les groupes**](#récupérer-tous-les-groupes)
+    * [**2.2 - Récupérer un groupe**](#récupérer-un-groupe)
+    * [**2.3 - Créer un groupe**](#créer-un-groupe)
+    * [**2.4 - Mettre à jour un groupe**](#mettre-à-jour-un-groupe)
+    * [**2.5 - Supprimer un groupe**](#supprimer-un-groupe)
+    * [**2.6 - Ajouter un utilisateur à un groupe**](#ajouter-un-utilisateur-à-un-groupe)
     7. Supprimer un utilisateur d'un groupe
 
 # User
 
-## 1.1 Récupérer tous les utilisateurs
+## Récupérer tous les utilisateurs
 <div align="right">
     <b><a href="#routes">↥ revenir en haut</a></b>
 </div>
@@ -76,7 +76,7 @@ Structure (collection)
 * city (string) - la ville de l'utilisateur
 * address (string) - l'adresse de l'utilisateur
 
-## 1.2 Récupérer un utilisateur
+## Récupérer un utilisateur
 <div align="right">
     <b><a href="#routes">↥ revenir en haut</a></b>
 </div>
@@ -119,7 +119,7 @@ Structure (objet)
 * city (string) - la ville de l'utilisateur
 * address (string) - l'adresse de l'utilisateur
 
-## 1.3 Création d'un utilisateur
+## Créer un utilisateur
 <div align="right">
     <b><a href="#routes">↥ revenir en haut</a></b>
 </div>
@@ -183,7 +183,7 @@ Structure (objet)
 * city (string) - la ville de l'utilisateur
 * address (string) - l'adresse de l'utilisateur
 
-## 1.4 Mettre à jour un utilisateur
+## Mettre à jour un utilisateur
 <div align="right">
     <b><a href="#routes">↥ revenir en haut</a></b>
 </div>
@@ -220,7 +220,7 @@ Structure (array)
 
 * Le résultat de l'opération.
 
-## 1.5 Suppression d'un utilisateur
+## Supprimer un utilisateur
 <div align="right">
     <b><a href="#routes">↥ revenir en haut</a></b>
 </div>
@@ -241,7 +241,7 @@ http://localhost:3000/api/users/5
 1
 ```
 
-## 1.6 Récupérer les publications d'un utilisateur
+## Récupérer les publications d'un utilisateur
 <div align="right">
     <b><a href="#routes">↥ revenir en haut</a></b>
 </div>
