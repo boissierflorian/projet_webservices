@@ -12,7 +12,7 @@ Ce document recense l'api proposée par le projet.
     * [**1.8 - Créer une publication pour un utilisateur**](#créer-une-publication)
     * [**1.9 - Mettre à jour une publication d'un utilisateur**](#mettre-à-jour-une-publication)
     * [**1.10 - Supprimer une publication**](#supprimer-une-publication)
-* [**2 - Groups**]
+* [**2 - Groups**](#groups)
     * [**2.1 - Récupérer tous les groupes**](#récupérer-tous-les-groupes)
     * [**2.2 - Récupérer un groupe**](#récupérer-un-groupe)
     * [**2.3 - Créer un groupe**](#créer-un-groupe)
