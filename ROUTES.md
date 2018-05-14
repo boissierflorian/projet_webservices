@@ -37,7 +37,7 @@ Aucun.
 ### Request body
 Aucune.
 
-### Exemple
+### Exemple
 
 http://localhost:3000/api/users/
 
@@ -70,6 +70,16 @@ http://localhost:3000/api/users/
 ]
 ```
 
+Structure (collection)
+
+* id (integer) - L'identifiant de l'utilisateur
+* firstName (string) - le prénom de l'utilisateur
+* lastName (string) - le nom de l'utilisateur
+* mail (string) - le mail de l'utilisateur
+* password (string) - le mot de passe de l'utilisateur
+* age (integer) - l'âge de l'utilisateur
+* city (string) - la ville de l'utilisateur
+* address (string) - l'adresse de l'utilisateur
 
 
 
