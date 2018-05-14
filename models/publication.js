@@ -1,5 +1,5 @@
 'use strict';
-'use strict';
+
 module.exports = (sequelize, DataTypes) => {
     var Publication = sequelize.define('Publication', {
         content: DataTypes.STRING,
