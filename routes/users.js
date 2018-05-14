@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var userService = require('../services/user');
+var publicationService = require('../services/user_publications');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
@@ -34,19 +35,33 @@ router.delete('/:id([0-9]+)', function(req, res, next) {
 });
 
 router.post('/:id([0-9]+)/publications', function(req, res, next) {
-  res.send('Créer une publication pour un utilisateur');
+  publicationService.createUserPublication(req.params.id, req.body).then(function(datas){
+    res.json(datas);
+  })
 });
 
 router.get('/:id([0-9]+)/publications', function(req, res, next) {
-  res.send('Afficher les publications d\'un utilisateur');
+  publicationService.getUserPublications(req.params.id).then(function(publications) {
+    res.json(publications);
+  });
+});
+
+router.get('/:id([0-9]+)/publications/:publicationId([0-9]+)', function(req, res, next) {
+  publicationService.getUserPublication(req.params.id, req.params.publicationId).then(function(publication) {
+    res.json(publication);
+  });
 });
 
 router.put('/:userId([0-9]+)/publications/:publicationId([0-9]+)', function(req, res, next) {
-  res.send('Mettre à jour la publication d\'un utilisateur');
+  publicationService.updateUserPublication(req.params.userId, req.params.publicationId, req.body).then(function(datas) {
+    res.json(datas);
+  })
 });
 
 router.delete('/:userId([0-9]+)/publications/:publicationId([0-9]+)', function(req, res, next) {
-  res.send('Supprimer la publication d\'un utilisateur');
+  publicationService.deleteUserPublication(req.params.userId, req.params.publicationId).then(function(datas) {
+    res.json(datas);
+  })
 });
 
 module.exports = router;
