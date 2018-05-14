@@ -252,4 +252,117 @@ http://localhost:3000/api/users/1/publications
 ]
 ```
 
+
+## 1.7 Récupérer une publication d'un utilisateur
+
+![GET](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111698754.png) **/api/users/{userId}/publications/{publicationId}**
+
+Retourne une publication d'un utilisateur
+
+## Paramètres d'url
+
+* userId (integer) - l'identifiant de l'utilisateur
+* publicationId (integer) - l'identifiant de la publication
+
+## Exemple
+
+http://localhost:3000/api/users/1/publications/1
+
+```
+{
+    "id": 1,
+    "content": "Première publication !",
+    "id_user": 1,
+    "createdAt": "2018-05-14T11:52:26.000Z",
+    "updatedAt": "2018-05-14T11:52:26.000Z"
+}
+```
+
+## 1.8 Création d'une publication pour un utilisateur
+
+![POST](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111384120.png) **/api/users/{userId}/publications**
+
+Crée une publication pour un utilisateur donné
+
+## Paramètres d'url
+
+* userId (integer) - l'identifiant de l'utilisateur
+
+## Request body
+
+```
+{
+    "content": "Une publication sans histoire"
+}
+```
+
+Structure (objet)
+
+* content (string) - le contenu de la publication
+
+## Exemple
+
+http://localhost:3000/api/users/1/publications/
+
+```
+{
+    "id": 2,
+    "id_user": "1",
+    "content": "Une publication sans histoire",
+    "updatedAt": "2018-05-14T12:11:53.001Z",
+    "createdAt": "2018-05-14T12:11:53.001Z",
+    "created": true
+}
+```
+
+## 1.9 Mettre à jour une publication d'un utilisateur
+
+![PUT](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111440019.png) **/api/users/{userId}/publications/{publicationId}**
+
+Met à jour le contenu d'une publication d'un utilisateur
+
+## Paramètres d'url
+
+* userId (integer) - l'identifiant de l'utilisateur
+* publicationId (integer) - l'identifiant de la publication
+
+## Request body
+
+```
+{
+    content : "Une publication avec histoire maintenant !"
+}
+```
+
+Structure (objet)
+
+* content (string) - le nouveau contenu de la publication
+
+## Exemple
+
+http://localhost:3000/api/users/1/publications/2
+
+```
+[
+    1
+]
+```
+
+## 1.10 Supprimer une publication d'un utilisateur
+
+![DELETE](https://nsa39.casimages.com/img/2018/05/14/mini_180514013111942008.png) **/api/users/{userId}/publications/{publicationId}**
+
+## Paramètres d'url
+
+* userId (integer) - l'identifiant de l'utilisateur
+* publicationId (integer) - l'identifiant de la publication à supprimer
+
+## Exemple
+
+http://localhost:3000/api/users/1/publications/7
+
+```
+1
+```
+
 # Groups
